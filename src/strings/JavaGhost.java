@@ -12,17 +12,22 @@ import java.util.Scanner;
  * @author laurel.zaborowski
  */
 public class JavaGhost {
-    
-    public static void main(String[] args) {  
-        String username = "javaghost" ; 
-        String password = "ic0d3";  
-        boolean areStringsEqual = username.equals(password); 
-        
+
+    public static void main(String[] args) {
+        String username = "javaghost";
+        String password = "ic0d3";
+
         Scanner keyboardScanner = new Scanner(System.in);
-        System.out.println("Enter your username followed by enter:") ; 
-        System.out.println("Enter your passowrd followed by enter:"); 
-        username = keyboardScanner.next(); 
-        password = keyboardScanner.next();  
-        
+        System.out.println("Enter your username followed by enter:");
+        username = keyboardScanner.next();
+        System.out.println("Enter your passowrd followed by enter:");
+        password = keyboardScanner.next();
+        boolean areStringsEqual = username.equals(password);
+        if (areStringsEqual) {
+            System.out.println("Login sucessful!");
+        } else {
+            System.out.println("Incorrect password or username! Try Again!");
+
+        } //close if/else
     } // close class
 } // close main
