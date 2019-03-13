@@ -5,7 +5,6 @@
  */
 package loops;
 
-import strings.*;
 import java.util.Scanner;
 
 /**
